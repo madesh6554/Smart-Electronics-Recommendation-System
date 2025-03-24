@@ -71,6 +71,7 @@ streamlit run app.py
 - **Accessory Filtering:** Only accessories matching the category and brand filters are displayed.
 
 ## 📊 Dataset Details
+- **Dataset Link**: [Recommendation system Dataset](https://github.com/madesh6554/Smart-Electronics-Recommendation-System/blob/main/Dataset_preprocessed_with_accessory.csv)
 - **Columns:** `product_title`, `category`, `brand`, `price`, `rating`, `review_count`, `features`, `image_url`, `is_accessory`
 - **Data Cleaning:**
     - Missing prices replaced with the median price.
