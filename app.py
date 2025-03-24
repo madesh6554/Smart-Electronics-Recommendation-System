@@ -112,17 +112,23 @@ def get_recommendations(product_name, df, cosine_sim, price_range, for_accessori
 # Streamlit UI
 st.markdown("""
     <style>
-    /* ... (existing styles remain unchanged) ... */
-    .rating-filter label {
-        margin-bottom: 8px;
-        display: flex;
-        align-items: center;
-    }
-    .rating-filter label span {
-        margin-right: 8px;
-        font-size: 20px;
-    }
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
     </style>
+    <div class="title-container">
+        🔍 Smart Product Recommendation System
+    </div>
 """, unsafe_allow_html=True)
 
 st.markdown('<div class="title">🔍 Smart Product Recommendation System</div>', unsafe_allow_html=True)
