@@ -180,7 +180,7 @@ with st.sidebar:
     )
 
 # Main Content
-search_query = st.text_input("Search for products:", "Apple iPhone 15")
+search_query = st.text_input("Search for products:", "Apple iPhone 16")
 
 # Get Recommendations
 similar_products = get_recommendations(search_query, df, cosine_sim, price_range, rating_filter=selected_ratings)
