@@ -1,3 +1,4 @@
+
 # 🔍 Smart Product Recommendation System
 
 ## 📌 Overview
@@ -46,3 +47,85 @@ The **Smart Product Recommendation System** is a Streamlit-based web application
 ```bash
 git clone <YOUR_REPO_LINK>
 cd smart-product-recommendation-system
+```
+
+### 🔥 2. Install Dependencies
+Make sure you have Python installed, then install the required packages:
+```bash
+pip install -r requirements.txt
+```
+
+### 🚀 3. Run the Application
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📊 File Structure
+```
+📂 smart-product-recommendation-system
+ ├── 📄 app.py                        # Main Streamlit application
+ ├── 📄 Dataset_preprocessed_with_accessory.csv   # Preprocessed product dataset
+ ├── 📄 requirements.txt              # Dependencies list
+ ├── 📄 README.md                     # Project documentation
+ ├── 📂 images                        # Image assets (if applicable)
+```
+
+---
+
+## ⚙️ Filters & Functionality
+
+### ✅ Filters Available
+- **Price Range:** Select minimum and maximum price.  
+- **Rating:** Filter products by rating (2★ to 5★).  
+- **Category:** Filter accessories by categories.  
+- **Brand:** Multi-select brands to refine results.  
+
+### 🔥 Recommendation Logic
+- **TF-IDF Vectorization:** Text features are extracted from the product title, category, brand, and features.
+- **Cosine Similarity:** Products are ranked by similarity scores.
+- **Accessory Filtering:** Only accessories matching the category and brand filters are displayed.
+
+---
+
+## 📊 Dataset Details
+- **Columns:** `product_title`, `category`, `brand`, `price`, `rating`, `review_count`, `features`, `image_url`, `is_accessory`
+- **Data Cleaning:**
+    - Missing prices replaced with the median price.
+    - Non-numeric values coerced to `NaN`.
+    - Missing ratings and review counts filled with `0`.
+    - Lists formatted using `ast.literal_eval()`.
+
+---
+
+## 💡 Future Enhancements
+- 🛒 **Add-to-Cart Feature:** Allow users to save products to a wishlist or cart.
+- 📊 **Product Comparisons:** Enable side-by-side comparison of selected products.
+- 🔥 **Real-time Data:** Integrate with live product APIs for up-to-date recommendations.
+
+---
+
+## 📚 Dependencies
+The project requires the following Python libraries:
+```
+streamlit  
+pandas  
+numpy  
+scikit-learn  
+fuzzywuzzy  
+```
+To install them, run:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 📩 Contributing
+Contributions are welcome! Feel free to fork the project, create a new branch, and submit a pull request.
+
+---
+
+## 📜 License
+This project is licensed under the MIT License.
