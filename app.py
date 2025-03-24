@@ -131,7 +131,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="title">🔍 Smart Product Recommendation System</div>', unsafe_allow_html=True)
 
 # Sidebar Filters
 with st.sidebar:
