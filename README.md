@@ -4,7 +4,7 @@
 ## 📌 Overview
 The **Smart Product Recommendation System** is a Streamlit-based web application that provides personalized product recommendations based on user queries. It leverages **TF-IDF vectorization** and **cosine similarity** to identify similar products and recommend relevant accessories. Users can apply filters such as **price range, rating, brand, and category** to refine their search.
 
-✅ **Live Demo:** Smart Electronics Recommendation System
+✅ **Live Demo:** Smart Electronics Recommendation System[https://smart-electronics-recommendation-system-cg6eyh2obhqeyju7vca6gn.streamlit.app/]
 
 ---
 
